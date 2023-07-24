@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <div className="fixed top-0 left-0 right-0 bg-white border-b-2 border-gray-400 p-4 z-50">
       <div className="flex items-center justify-between">
-        <h1 className="font-bold text-blue-500 text-3xl">Med Sync Solutions</h1>
+        <h1 className="font-bold text-blue-500 text-2xl md:text-3xl">Med Sync Solutions</h1>
         {/* Hamburger Menu Icon */}
         <div className="md:hidden">
           <MenuOutlined className="text-blue-500 cursor-pointer" onClick={showNav} />

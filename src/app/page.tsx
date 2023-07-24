@@ -7,6 +7,7 @@ import "aos/dist/aos.css"; // Import the AOS CSS file
 import AOS from "aos"; // Import the AOS libra
 import Intro from "./components/Intro";
 import About from "./components/About";
+import Services from "./components/Service";
 const LandingPage = () => {
   useEffect(() => {
     AOS.init();
@@ -20,6 +21,7 @@ const LandingPage = () => {
       <div>
         <About />
       </div>
+      <Services/>
     </div>
   );
 };
