@@ -1,53 +1,52 @@
-"use client"
-import { Menu } from "antd";
+"use client";
+import { MenuOutlined } from "@ant-design/icons";
 import React, { useState } from "react";
+
 const Navbar = () => {
   const [nav, setNav] = useState<boolean>(false);
+
   const showNav = () => {
     setNav(!nav);
   };
+
   return (
-    <div className="flex justify-around items-center w-full py-6">
-      <h1 className="font-bold text-blue-500 text-3xl text-shadow">Med Sync Solutions</h1>
-      <ul className="items-center w-[50%] justify-around hidden md:flex">
-        <a href="p#">
-          <li>Home</li>
-        </a>
-        <a href="#about">
-          <li>About</li>
-        </a>
-        <a href="#services">
-          <li>Service</li>
-        </a>
-        <a href="#blog">
-          <li>Doctors</li>
-        </a>
-        <a href="#contract">
-          <li>Contacts</li>
-        </a>
-      </ul>
-      <div
-        className="md:hidden"
-        onClick={showNav}
-      >
-        {/* {!nav ? (
-          <Menu className="text-white cursor-pointer" />
-        ) : (
-          <Time className="text-white cursor-pointer" />
-        )} */}
+    <div className="fixed top-0 left-0 right-0 bg-white border-b-2 border-gray-400 p-4 z-50">
+      <div className="flex items-center justify-between">
+        <h1 className="font-bold text-blue-500 text-3xl">Med Sync Solutions</h1>
+        {/* Hamburger Menu Icon */}
+        <div className="md:hidden">
+          <MenuOutlined className="text-blue-500 cursor-pointer" onClick={showNav} />
+        </div>
+        {/* Desktop Menu */}
+        <ul className="hidden md:flex space-x-4">
+          <li>
+            <a href="#home">HOME</a>
+          </li>
+          <li>
+            <a href="#about">ABOUT</a>
+          </li>
+          <li>
+            <a href="#services">SERVICES</a>
+          </li>
+          <li>
+            <a href="#doctors">DOCTORS</a>
+          </li>
+          <li>
+            <a href="#contact">CONTACT</a>
+          </li>
+        </ul>
       </div>
+      {/* Mobile Menu */}
       <ul
-        className={
-          !nav
-            ? "hidden"
-            : " md:hidden absolute w-full mt-72 bg-[#2e2e37] bg-opacity-70"
-        }
+        className={`${
+          nav ? "flex flex-col" : "hidden"
+        } md:hidden absolute top-full left-0 right-0 bg-[#202036] bg-opacity-70 py-4`}
       >
-        <li className="p-2 border-b-[1px] w-full">Home</li>
-        <li className="p-2 border-b-[1px] w-full">About</li>
-        <li className="p-2 border-b-[1px] w-full">Service</li>
-        <li className="p-2 border-b-[1px] w-full">Doctors</li>
-        <li className="p-2 border-b-[1px] w-full">Contacts</li>
+        <li className="p-2 text-white border-b-[1px]">Home</li>
+        <li className="p-2 text-white border-b-[1px]">About</li>
+        <li className="p-2 text-white border-b-[1px]">Service</li>
+        <li className="p-2 text-white border-b-[1px]">Doctors</li>
+        <li className="p-2 text-white">Contacts</li>
       </ul>
     </div>
   );
