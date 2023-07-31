@@ -184,7 +184,7 @@ const SignupPage: React.FC = () => {
               onClick={showSignPage}
               className="text-center text-blue-500"
             >
-              <li className='cursor-pointer'> Don't have an account?</li>
+              <li className='cursor-pointer'> Don&apos;t have an account?</li>
             </div>
           </Form>
         )}
