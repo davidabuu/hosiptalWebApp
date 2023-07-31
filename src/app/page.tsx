@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useEffect } from "react";
 import Navbar from "./components/Navbar";
 import "typeface-montserrat";
@@ -8,6 +8,7 @@ import AOS from "aos"; // Import the AOS libra
 import Intro from "./components/Intro";
 import About from "./components/About";
 import Services from "./components/Service";
+import Footer from "./components/Footer";
 const LandingPage = () => {
   useEffect(() => {
     AOS.init();
@@ -21,7 +22,8 @@ const LandingPage = () => {
       <div>
         <About />
       </div>
-      <Services/>
+      <Services />
+      <Footer />
     </div>
   );
 };
