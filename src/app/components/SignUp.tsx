@@ -14,7 +14,7 @@ const SignupPage: React.FC = () => {
           data-aos="fade-right"
           className="text-3xl md:text-4xl  font-bold mb-4"
         >
-          Let's Get Started
+          Let&apos;s Get Started
         </h1>
         <p
           data-aos="fade-right"
