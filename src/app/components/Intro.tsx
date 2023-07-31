@@ -1,4 +1,5 @@
 
+import Link from "next/link";
 import React from "react";
 const Intro = () => {
   return (
@@ -21,7 +22,8 @@ const Intro = () => {
         departments.
       </p>
       <button className="mx-4 md:mx-32 mt-4 md:mt-6 px-6 py-3 md:px-8 md:py-4 bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-600 focus:outline-none focus:bg-blue-600">
-        Register
+       <Link href='/sign-up'>
+       Register</Link>
       </button>
     </div>
   </div>
