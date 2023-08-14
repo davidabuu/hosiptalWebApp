@@ -16,7 +16,7 @@ const LandingPage = () => {
   return (
     <div>
       <Navbar />
-      <div className="img-bg bg-cover bg-center  h-screen">
+      <div className="img-bg bg-cover bg-center">
         <Intro />
       </div>
       <div>

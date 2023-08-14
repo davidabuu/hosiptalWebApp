@@ -20,7 +20,7 @@ const ServiceSection: React.FC<ServiceProps> = ({
         <h2 className="text-2xl text-center sm:text-3xl md:text-3xl font-bold mt-4">
           {title}
         </h2>
-        <p className="text-base sm:text-lg md:text-xl text-center mt-4">
+        <p className="text-base sm:text-lg md:text-3xl text-center ">
           {description}
         </p>
       </div>
@@ -35,13 +35,13 @@ const Services: React.FC = () => {
         <h2 className="text-center  text-3xl sm:text-4xl md:text-5xl">
           Our Services
         </h2>
-        <div className="h-full flex flex-col sm:flex-row justify-center items-center">
+        <div className="h-full flex  flex-col lg:flex-row justify-evenly items-center">
           <ServiceSection
             title="Medical Consultations"
             description="Provide expert medical consultations with qualified doctors specialized in various fields."
             logo={
               <FaStethoscope
-                size={35}
+                className="icons"
                 color="blue"
               />
             }
@@ -52,7 +52,7 @@ const Services: React.FC = () => {
             description="State-of-the-art diagnostic laboratory services with skilled lab testers for accurate and timely test results. "
             logo={
               <GiTestTubes
-                size={35}
+                className="icons"
                 color="blue"
               />
             }
@@ -63,7 +63,7 @@ const Services: React.FC = () => {
             description="Offer comprehensive health screenings and preventive care programs to promote overall wellness. "
             logo={
               <IoShieldCheckmarkSharp
-                size={35}
+                className="icons"
                 color="blue"
               />
             }
