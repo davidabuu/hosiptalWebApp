@@ -20,7 +20,7 @@ const ServiceSection: React.FC<ServiceProps> = ({
         <h2 className="text-2xl text-center sm:text-3xl md:text-3xl font-bold mt-4">
           {title}
         </h2>
-        <p className="text-base sm:text-lg md:text-3xl text-center ">
+        <p className="text-base sm:text-lg md:text-2xl text-center ">
           {description}
         </p>
       </div>
@@ -32,7 +32,7 @@ const Services: React.FC = () => {
   return (
     <div className="img2-bg text-white">
       <div className="bg-[#1e4165b9] pb-8 h-full">
-        <h2 className="text-center  text-3xl sm:text-4xl md:text-5xl">
+        <h2 className="text-center  text-3xl sm:text-4xl md:text-4xl">
           Our Services
         </h2>
         <div className="h-full flex  flex-col lg:flex-row justify-evenly items-center">
