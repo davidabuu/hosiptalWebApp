@@ -1,6 +1,8 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter, Montserrat } from 'next/font/google'
+import { Providers } from './redux/provider'
+
 
 const inter = Inter({ subsets: ['latin'] })
 const mont = Montserrat({subsets:['latin']})
@@ -17,7 +19,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={mont.className}>{children}</body>
+      <body className={mont.className}>
+      <Providers>{children}</Providers>
+      </body>
     </html>
   )
 }

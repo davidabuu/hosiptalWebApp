@@ -6,7 +6,7 @@ const Intro = () => {
     <div>
     <div
       data-aos="fade-right"
-      className="pb-3 pt-10 md:pb-20 intro-div text-white flex justify-center items-start flex-col min-h-screen"
+      className="pb-3 smaller-size pt-10 md:pb-20 intro-div text-white flex justify-center items-start flex-col min-h-screen"
     >
       <h1 className="mx-4 md:mx-32 text-2xl md:text-4xl lg:text-5xl xl:text-5xl">
         Making Health
