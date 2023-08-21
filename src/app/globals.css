@@ -45,7 +45,7 @@ ul li {
   width: 40px !important;
   height: 60px !important;
 }
-@media (max-width: 950px) {
+@media (max-width: 1000px) {
   .img-bg {
     background-size: cover;
     height: 70vh;
@@ -83,9 +83,13 @@ ul li {
     transform: translateY(-20px);
   }
 }
-@media(max-width:320px){
+@media(max-width:280px){
   .img-bg{
     height: 80vh;
+  }
+  .icons{
+    height: 30px !important;
+    width: 30px !important;
   }
   .img2-bg{
     height: 120vh;
