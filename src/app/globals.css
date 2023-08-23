@@ -49,7 +49,7 @@ ul li {
     
   }
   .icons{
-    height: 80px !important;
+    height: 0px !important;
     width: 80px !important;
   }
   .img2-bg{
@@ -93,6 +93,29 @@ ul li {
   }
   .services{
     transform: translateY(-20px);
+  }
+}
+
+.top_part {
+  background: #2563EB;
+  padding: 120px 0;
+  transform: skew(0deg, -10deg) translateY(-120px);
+}
+
+.textbox {
+  padding: 100px 20px;
+  transform: skew(0deg, 10deg);
+}
+
+@media screen and (max-width: 768px) {
+  .top_part {
+    padding: 80px 0;
+    transform: skew(0deg, -5deg) translateY(-40px);
+  }
+  
+  .textbox {
+    padding: 40px 10px;
+    transform: skew(0deg, 5deg);
   }
 }
 
