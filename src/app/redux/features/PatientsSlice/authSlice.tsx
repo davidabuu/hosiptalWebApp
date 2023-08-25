@@ -30,11 +30,11 @@ const initialState: AuthState = {
 
 export const registerUser = createAsyncThunk(
   'auth/registerUser',
-  async (user: User, thunkAPI) => {
+  async (user: User) => {
     try {
       await PatientsRegistration(user)
-    } catch (error) {
-      return thunkAPI.rejectWithValue('Registration failed.');
+    } catch (error:any) {
+      throw error.response.data;
     }
   }
 );
