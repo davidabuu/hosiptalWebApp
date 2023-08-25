@@ -9,7 +9,7 @@ import { useAddNewPatientMutation } from "../redux/ApiServices/PatientsEndpoints
 const SignupPage: React.FC = () => {
   const [show, hide] = useState<boolean>(true);
   const [loading, setLoading] = useState<boolean>(false);
-  const [addNewPatients, {error}] = useAddNewPatientMutation();
+  const [addNewPatients, {error, isLoading, isSuccess}] = useAddNewPatientMutation();
  console.log(error)
     const showSignPage = () => {
     hide(!show);
@@ -38,7 +38,11 @@ const SignupPage: React.FC = () => {
         duration: 2,
       });
     } else {
+        setLoading(isLoading)
       addNewPatients(data);
+      if(isSuccess){
+        hide(!show);
+      }
     }
   };
   const Login = async (data: FormValues) => {
