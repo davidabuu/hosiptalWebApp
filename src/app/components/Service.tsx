@@ -110,7 +110,7 @@ const Services: React.FC = () => {
   return (
     <div className="img2-bg text-white">
       <div className="bg-[#1e4165b9] pb-8">
-        <h2 className="text-center text-3xl pb-2 sm:text-4xl md:text-4xl">
+        <h2 className="text-center text-3xl pb-6 sm:text-4xl md:text-4xl">
           Our Services
         </h2>
         <div className="flex flex-col lg:flex-row justify-evenly items-center">

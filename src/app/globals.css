@@ -77,15 +77,11 @@ ul li {
     width: 30px !important;
    
   }
-  .services{
-    transform: translateY(15px);
-  }
+ 
   
 }
 @media(max-width:400px){
-  .services{
-    transform: translateY(-5px) !important;
-  }
+  
 }
 @media (min-width: 280px) and (max-width: 360px){
   .img-bg{
