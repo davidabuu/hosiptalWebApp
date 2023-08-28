@@ -17,14 +17,14 @@ const Navbar = () => {
           Med Sync Solutions
         </h1>
         {/* Hamburger Menu Icon */}
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <MenuOutlined
             className="text-blue-500 cursor-pointer"
             onClick={showNav}
           />
         </div>
         {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-4">
+        <ul className="hidden lg:flex space-x-4">
           <li>
             <a href="#home">HOME</a>
           </li>
@@ -49,7 +49,7 @@ const Navbar = () => {
       <ul
         className={`${
           nav ? "flex flex-col" : "hidden"
-        } md:hidden absolute top-full left-0 right-0 bg-[#202036] bg-opacity-70 py-4`}
+        } lg:hidden absolute top-full left-0 right-0 bg-[#202036] bg-opacity-70 py-4`}
       >
         <li className="p-2 text-white border-b-[1px]">Home</li>
         <li className="p-2 text-white border-b-[1px]">About</li>

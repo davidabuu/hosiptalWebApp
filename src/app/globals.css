@@ -42,24 +42,28 @@ ul li {
   height: 60vh;
 }
 
+.icons{
+  width: 40px !important;
+  height: 40px !important;
+}
 @media (max-width: 1000px) {
   .img-bg {
     background-size: cover;
     height: 70vh;
     
   }
-  .icons{
-    height: 0px !important;
-    width: 80px !important;
-  }
+
   .img2-bg{
     height: 100vh;
   }
   .services{
     transform: translateY(-20px);
   }
+
+}
+@media (max-width: 900px) {
   .intro-div {
-    transform: translateY(-100px) !important;
+    transform: translateY(-50px) !important;
   }
 }
 @media (max-width: 300px) {
@@ -72,9 +76,10 @@ ul li {
   .img2-bg{
     height: 85vh;
   }
+ 
   .icons{
-    height: 40px !important;
-    width: 40px !important;
+    width: 20px !important;
+    height: 20px !important;
   }
   .services{
     transform: translateY(-20px);
@@ -84,10 +89,7 @@ ul li {
   .img-bg{
     height: 80vh;
   }
-  .icons{
-    height: 30px !important;
-    width: 30px !important;
-  }
+
   .img2-bg{
     height: 120vh;
   }
