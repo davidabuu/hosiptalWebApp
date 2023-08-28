@@ -39,7 +39,7 @@ ul li {
   overflow: hidden;
   background-position: center;
   width: 100%;
-  height: 60vh;
+  height: max-content;
 }
 
 .icons{
@@ -53,9 +53,7 @@ ul li {
     
   }
 
-  .img2-bg{
-    height: 100vh;
-  }
+
   .services{
     transform: translateY(-20px);
   }
@@ -72,17 +70,21 @@ ul li {
   }
 }
 
-@media(max-width:500px){
-  .img2-bg{
-    height: 85vh;
-  }
+@media(max-width:950px){
+ 
  
   .icons{
-    width: 20px !important;
-    height: 20px !important;
+    width: 30px !important;
+   
   }
   .services{
-    transform: translateY(-20px);
+    transform: translateY(15px);
+  }
+  
+}
+@media(max-width:400px){
+  .services{
+    transform: translateY(-5px) !important;
   }
 }
 @media (min-width: 280px) and (max-width: 360px){
@@ -90,9 +92,6 @@ ul li {
     height: 80vh;
   }
 
-  .img2-bg{
-    height: 120vh;
-  }
   .services{
     transform: translateY(-20px);
   }
